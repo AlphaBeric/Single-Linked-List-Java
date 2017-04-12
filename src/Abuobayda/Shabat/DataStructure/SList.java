@@ -104,5 +104,10 @@ public class SList<T> implements SListInterface<T> {
             current = current.getNext();
         }
     }
+
+    @Override
+    public int numOfItems() {
+        return numOfItem;
+    }
     
 }

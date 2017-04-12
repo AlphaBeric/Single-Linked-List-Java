@@ -17,5 +17,6 @@ public interface SListInterface<T> {
     public boolean isEmpty();
     public void clear();
     public void display();
+    public int numOfItems();
     
 }
