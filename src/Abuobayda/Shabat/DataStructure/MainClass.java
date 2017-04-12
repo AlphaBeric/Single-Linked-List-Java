@@ -16,7 +16,10 @@ public class MainClass {
     public static void main(String[] args) {
         // TODO code application logic here
         
+        
+        
         SListInterface<Integer> myList = new SList<Integer>();
+        System.out.println("==========Testing addToBack method===============");
         myList.addToBack(10);
         myList.addToBack(20);
         myList.addToBack(30);
@@ -25,7 +28,10 @@ public class MainClass {
         System.out.println("==============Testing remove Back================");
         int val = myList.removeBack();
         myList.display();
-        System.out.println("value"+ val);
+        System.out.println("value of the  removed node: "+ val);
+        
+        System.out.println("=========Testing numOfItems method========");
+        System.out.println("Number Of Item in the List: "+ myList.numOfItems());
         
     }
 }

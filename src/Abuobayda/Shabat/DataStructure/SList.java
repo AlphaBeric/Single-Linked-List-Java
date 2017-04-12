@@ -93,7 +93,8 @@ public class SList<T> implements SListInterface<T> {
 
     @Override
     public void clear() {
-        throw new UnsupportedOperationException("Not supported yet.");
+        head = null;
+        numOfItem=0;
     }
 
     @Override
