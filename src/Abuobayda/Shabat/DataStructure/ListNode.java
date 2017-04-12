@@ -8,7 +8,7 @@ package Abuobayda.Shabat.DataStructure;
  *
  * @author absha
  */
-public class ListNode <T> implements NodeInterface{
+public class ListNode <T> implements NodeInterface <T>{
     
     //Create two fields item and next
     private T item;
@@ -38,12 +38,12 @@ public class ListNode <T> implements NodeInterface{
     }
 
     @Override
-    public void setItem(Object item) {
+    public void setItem(T item) {
         this.item = (T) item;
     }
 
     @Override
-    public Object getItem() {
+    public T getItem() {
         return (T) item;
     }
     
