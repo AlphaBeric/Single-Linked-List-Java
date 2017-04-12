@@ -16,5 +16,6 @@ public interface SListInterface<T> {
     public ListNode contain(int position);
     public boolean isEmpty();
     public void clear();
+    public void display();
     
 }
