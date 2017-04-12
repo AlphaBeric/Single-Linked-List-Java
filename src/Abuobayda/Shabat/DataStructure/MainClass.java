@@ -22,5 +22,10 @@ public class MainClass {
         myList.addToBack(30);
         myList.display();
         
+        System.out.println("==============Testing remove Back================");
+        int val = myList.removeBack();
+        myList.display();
+        System.out.println("value"+ val);
+        
     }
 }

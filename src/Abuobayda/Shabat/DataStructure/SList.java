@@ -72,7 +72,8 @@ public class SList<T> implements SListInterface<T> {
             
             if(current!=null)
             {
-                value = (T) current.getItem();
+                //current is pointing to the node before the last node
+                value = (T) current.getNext().getItem();
                 current.setNext(null);
             }  
         }
