@@ -6,7 +6,7 @@ package Abuobayda.Shabat.DataStructure;
 
 /**
  *
- * @author absha
+ * @author Abuobyda Shabat
  */
 public class ListNode <T> implements NodeInterface <T>{
     

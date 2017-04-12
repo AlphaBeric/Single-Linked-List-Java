@@ -6,7 +6,7 @@ package Abuobayda.Shabat.DataStructure;
 
 /**
  *
- * @author absha
+ * @author Abuobayda Shabat
  */
 public class MainClass {
 
