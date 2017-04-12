@@ -30,13 +30,15 @@ public class SList<T> implements SListInterface<T> {
             value = (T) head.getItem();
             head = head.getNext();
         }
-        
+        numOfItem--;
         return value;
     }
 
     @Override
     public void addToBack(T item) {
         ListNode current = head;
+        // we start with one because we don't want the 
+        // current to become null before adding
         int cnt = 1;
         while(current!=null && cnt < numOfItem){
             current = current.getNext();
@@ -49,6 +51,7 @@ public class SList<T> implements SListInterface<T> {
             numOfItem++;
             
         }
+        //when the list is empty
         else{
             addToFront(item);
         }
@@ -56,7 +59,25 @@ public class SList<T> implements SListInterface<T> {
 
     @Override
     public T removeBack() {
-        throw new UnsupportedOperationException("Not supported yet.");
+        T value = null;
+        if(!isEmpty()){
+            ListNode current = head;
+            //to make sure the current will point to the node before the last node
+            int cnt = 2;
+            while(current!=null && cnt <numOfItem)
+            {
+                current = current.getNext();
+                cnt++;
+            }
+            
+            if(current!=null)
+            {
+                value = (T) current.getItem();
+                current.setNext(null);
+            }  
+        }
+        numOfItem--;
+        return value;
     }
 
     @Override
