@@ -80,10 +80,22 @@ public class SList<T> implements SListInterface<T> {
         numOfItem--;
         return value;
     }
+    
+    //return a reference for the target node
 
     @Override
-    public ListNode contain(int position) {
-        throw new UnsupportedOperationException("Not supported yet.");
+    public ListNode contain(T target) {
+        ListNode temp = null;
+        ListNode current = head;
+        while (current!=null){
+            if(current.getItem().equals(target))
+            {
+                temp = current;
+            }
+            current = current.getNext();
+           
+        }
+        return temp;
     }
 
     @Override

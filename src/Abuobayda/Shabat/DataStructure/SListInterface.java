@@ -13,7 +13,7 @@ public interface SListInterface<T> {
     public T removeFront();
     public void addToBack(T item);
     public T removeBack();
-    public ListNode contain(int position);
+    public ListNode contain(T target);
     public boolean isEmpty();
     public void clear();
     public void display();
